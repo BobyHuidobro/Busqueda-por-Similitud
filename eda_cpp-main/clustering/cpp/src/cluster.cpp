@@ -83,7 +83,7 @@ const float* Cluster::getCentroid(size_t i) const{
     return mat_centroids.getRow(i);
 }
 
-std::vector<size_t> Cluster::getInds(size_t i){
+std::vector<size_t> Cluster::getInds(size_t i) const{
     return inds[i];
 }
 

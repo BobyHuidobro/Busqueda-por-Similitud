@@ -1,6 +1,7 @@
 #include "utils.hpp"
 #include <cmath>
 #include <iostream>
+#include <vector>
 
 float vec_compute_distance(const float* u, const float* v, size_t dim){
     float d = 0;
@@ -48,4 +49,34 @@ void print_array(const float *array, size_t d){
         std::cout << array[i] << " ";
     }
     std::cout<< std::endl;
+}
+
+static int partition(const std::vector<float> &values, std::vector<size_t> &indices, int low, int high) {
+    float pivotVal= values[indices[high]];
+    int i = low - 1;
+    for (int j = low; j < high; j++) {
+        if(values[indices[j]] <= pivotVal) {
+            i++;
+            std::swap(indices[i], indices[j]);
+        }
+    }
+    std::swap(indices[i + 1], indices[high]);
+    return i + 1;
+}
+
+static void quicksort_indices(const std::vector<float> &values, std::vector<size_t> &indices, int low, int high) {
+    if(low < high) {
+        int p = partition(values, indices, low, high);
+        quicksort_indices(values, indices, low, p - 1);
+        quicksort_indices(values, indices, p + 1, high);
+    }
+}
+
+std::vector<size_t> argsort(const std::vector<float> &values) {
+    std::vector<size_t> indices(values.size());
+    for (size_t i = 0; i < values.size(); i++) {
+        indices[i] = i;
+    }
+    quicksort_indices(values, indices, 0, static_cast<int>(values.size()) - 1);
+    return indices;
 }

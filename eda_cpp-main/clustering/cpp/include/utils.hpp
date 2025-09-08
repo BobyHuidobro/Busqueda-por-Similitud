@@ -1,7 +1,11 @@
 #ifndef _UTILS_HPP
 #define _UTILS_HPP
 
+#include <vector>
 #include <cmath>
+#include <iostream>
+#include <utility>
+
 float vec_compute_distance(const float *u, const float* v, size_t dim);
 
 void vec_add(float *s, const float* u,  size_t dim);
@@ -14,7 +18,7 @@ float vec_compute_avg_dif(const float *u, const float* v,  size_t dim);
 
 void print_array(const float *array, size_t d);
 
-//size_t *argsort(...)
+std::vector<size_t> argsort(const std::vector<float> &values);
 
 
 #endif
