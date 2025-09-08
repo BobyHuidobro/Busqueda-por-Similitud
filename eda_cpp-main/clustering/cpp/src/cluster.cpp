@@ -79,7 +79,7 @@ void Cluster::applyClustering(){
     delete[] centroids_1;    
 }
 
-const float* Cluster::getCentroid(size_t i){
+const float* Cluster::getCentroid(size_t i) const{
     return mat_centroids.getRow(i);
 }
 
