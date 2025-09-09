@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import umap
-from pathlib import Path
 
 n_vectors = 1000
 n_queries = 100

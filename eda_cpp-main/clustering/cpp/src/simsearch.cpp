@@ -12,7 +12,7 @@ std::vector<size_t> SimSearch::search_with_clusters(const float *query, size_t t
     if(top_k > N) top_k = N;
 
     size_t k = mat_clusters.getK();
-    if (k == 0) return search_without(query, top_k);
+    if (k == 0) return search(query, top_k);
 
     size_t d = mat_data.getDim();
 
@@ -72,7 +72,7 @@ std::vector<size_t> SimSearch::search_with_clusters(const float *query, size_t t
     return result;
 }
 
-std::vector<size_t> SimSearch::search_without(const float *query, size_t top_k) {
+std::vector<size_t> SimSearch::search(const float *query, size_t top_k) {
     size_t N = mat_data.getN();
     if(top_k == 0 || N == 0) return {};
     if(top_k > N) top_k = N;

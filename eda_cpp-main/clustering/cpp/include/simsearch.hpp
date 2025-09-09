@@ -10,7 +10,7 @@ private:
 public:
     SimSearch(const Matrix &_mat_data, const Cluster &_mat_clusters);
     std::vector<size_t> search_with_clusters(const float *query, size_t top_k);
-    std::vector<size_t> search_without(const float *query, size_t top_k);
+    std::vector<size_t> search(const float *query, size_t top_k);
 };
 
 #endif 
