@@ -3,7 +3,7 @@
 #include <queue>
 
 SimSearch::SimSearch(const Matrix &_mat_data, const Cluster &_mat_clusters): mat_data(_mat_data), mat_clusters(_mat_clusters) {
-    // Constructor implementation (if needed)
+
 }
 
 std::vector<size_t> SimSearch::search_with_clusters(const float *query, size_t top_k) {
@@ -50,7 +50,7 @@ std::vector<size_t> SimSearch::search_with_clusters(const float *query, size_t t
     if(candidates.empty()) return {};
 
     std::vector<float> distances;
-    distances.reserve(candidates.size());
+    distances.resize(candidates.size()); 
     size_t i;
     for (i = 0; i < candidates.size(); i++) {
         distances[i] = candidates[i].first;

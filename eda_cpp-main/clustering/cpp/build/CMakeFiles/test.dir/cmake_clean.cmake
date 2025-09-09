@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/test.dir/src/cluster.cpp.o.d"
   "CMakeFiles/test.dir/src/matrix.cpp.o"
   "CMakeFiles/test.dir/src/matrix.cpp.o.d"
+  "CMakeFiles/test.dir/src/simsearch.cpp.o"
+  "CMakeFiles/test.dir/src/simsearch.cpp.o.d"
   "CMakeFiles/test.dir/src/utils.cpp.o"
   "CMakeFiles/test.dir/src/utils.cpp.o.d"
   "CMakeFiles/test.dir/test.cpp.o"

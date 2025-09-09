@@ -8,10 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/Domingo/Documents/Estructura Datos/Tarea-1/eda_cpp-main/clustering/cpp/src/cluster.cpp" "CMakeFiles/test.dir/src/cluster.cpp.o" "gcc" "CMakeFiles/test.dir/src/cluster.cpp.o.d"
-  "/Users/Domingo/Documents/Estructura Datos/Tarea-1/eda_cpp-main/clustering/cpp/src/matrix.cpp" "CMakeFiles/test.dir/src/matrix.cpp.o" "gcc" "CMakeFiles/test.dir/src/matrix.cpp.o.d"
-  "/Users/Domingo/Documents/Estructura Datos/Tarea-1/eda_cpp-main/clustering/cpp/src/utils.cpp" "CMakeFiles/test.dir/src/utils.cpp.o" "gcc" "CMakeFiles/test.dir/src/utils.cpp.o.d"
-  "/Users/Domingo/Documents/Estructura Datos/Tarea-1/eda_cpp-main/clustering/cpp/test.cpp" "CMakeFiles/test.dir/test.cpp.o" "gcc" "CMakeFiles/test.dir/test.cpp.o.d"
+  "/home/eda/eda/Busqueda-por-Similitud/eda_cpp-main/clustering/cpp/src/cluster.cpp" "CMakeFiles/test.dir/src/cluster.cpp.o" "gcc" "CMakeFiles/test.dir/src/cluster.cpp.o.d"
+  "/home/eda/eda/Busqueda-por-Similitud/eda_cpp-main/clustering/cpp/src/matrix.cpp" "CMakeFiles/test.dir/src/matrix.cpp.o" "gcc" "CMakeFiles/test.dir/src/matrix.cpp.o.d"
+  "/home/eda/eda/Busqueda-por-Similitud/eda_cpp-main/clustering/cpp/src/simsearch.cpp" "CMakeFiles/test.dir/src/simsearch.cpp.o" "gcc" "CMakeFiles/test.dir/src/simsearch.cpp.o.d"
+  "/home/eda/eda/Busqueda-por-Similitud/eda_cpp-main/clustering/cpp/src/utils.cpp" "CMakeFiles/test.dir/src/utils.cpp.o" "gcc" "CMakeFiles/test.dir/src/utils.cpp.o.d"
+  "/home/eda/eda/Busqueda-por-Similitud/eda_cpp-main/clustering/cpp/test.cpp" "CMakeFiles/test.dir/test.cpp.o" "gcc" "CMakeFiles/test.dir/test.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

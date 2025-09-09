@@ -22,12 +22,14 @@ If you want to work with the VBox environment please folow these steps:
   
 Please, to install the dependencies consult the Chapter 1 of the guide [book](https://www.dropbox.com/s/v3jeokz580z0amq/EDA_book.pdf).
 ## Compiling with CMake 
-- cd [sort | misc]  (_go to the project folder_)
+- cd eda_cpp-main/clustering/cpp  (_go to the project folder_)
 - mkdir build  (_create a build folder_)
 - cd build
 - cmake .. (_create makefiles. Remember, to use cmake you should have the CMakeLists.txt file_ )
-- make  (_run make_)
+- make -j  (_run make_)
 
 ## Running
 - ./test  (_run executable_)
+
+Aunque ya estan los archivos creados, se puede ejecutar directamente el ./test en  la carpeta build.
 
